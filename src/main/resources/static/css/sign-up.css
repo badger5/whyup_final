@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+}
+
+h1 {
+	margin-bottom: 55px;
+	font-size: 32px;
+}
+
+.form-wrap {
+	width: 800px;
+	margin:0 auto;
+	padding: 40px;
+}
+
+.form-wrap > section {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 50px;
+}
+
+input {
+	font-size: 18px;
+}
+
+input[type="text"] {
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	
+}
+
+section > div.title {
+	flex-basis: 35%;
+	padding-left: 40px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.btn-area {
+	justify-content: flex-end;
+}
+
+.btn-area button{
+	width: 121px;
+	height: 39px;
+	border-radius:4px;
+	border: none;
+	color: white;
+	font-size:18px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-area button[type="submit"] {
+	background-color: rgb(52, 152, 219);
+	margin-left: 20px;
+}
+
+.btn-area button.cancel {
+	background-color: rgb(158, 158, 158);
+}

@@ -1,0 +1,156 @@
+#mask {  
+    position:absolute;  
+    z-index:9000;  
+    background-color:#000;  
+    display:none;  
+    left:0;
+    top:0;
+} 
+
+
+.window{
+    display: none;
+    position:absolute;  
+    left:50%;
+    top:150px;
+    background-color:#FFF;
+    z-index:10000;   
+ }
+
+.userInfo{
+    margin-left: -240px;
+    width:480px;
+    height:650px;
+}
+
+.userInfo > header {
+    height: 50%;
+    background-color: rgb(129, 137, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.userInfo > header > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+
+}
+
+.userInfo > header > .user-name{
+    position: absolute;
+    display: block;
+    text-align: center;
+    bottom: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.userInfo > header > .edit {
+    position: absolute;
+    top:35px;
+    left: 40px;
+    width: 89px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    font-size:19px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(230, 126, 34);
+    cursor: pointer;
+}
+
+.window .close {
+    position: absolute;
+    top:25px;
+    right:25px;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.userInfo .close{
+    background-image: url(/image/letterX.png);
+    background-color: rgb(129, 137, 205);
+}
+
+.userInfo > main > div {
+    display: flex;
+    align-items: center;
+    padding:20px 50px;
+    font-size: 22px;
+}
+
+.userInfo > main .title {
+    margin-right: 20px;
+}
+
+.userInfo > main > .prize {
+    
+    border-bottom: 1px solid gray;
+}
+
+.userInfo .prize > img {
+    width: 48px;
+    height:48px;
+} 
+
+.userInfo .introduce > .title {
+    align-self: flex-start;
+}
+
+.userInfo .introduce > .content {
+    overflow-y:auto;
+}
+
+/*write-board popup*/
+.write-board {
+    width: 640px;
+    height: 540px;
+    margin-left: -240px;
+    padding:50px;
+}
+
+.write-board h1{
+    margin-left: 20px;
+}
+
+.write-board .write-issue {
+    background-color: #E0E0E0;
+    width: 240px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin: 40px 0;
+}
+
+.write-board .comment {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.write-board .complete {
+    border: none;
+    border-radius: 4px;
+    font-size:16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(39, 174, 96);
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 83%;
+}
+
+.write-board .close {
+    background-image: url(/image/letterX-black.png);
+    background-color: white;
+}

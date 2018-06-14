@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/main-header.css">
 	<link rel="stylesheet" href="css/comment.css">
 	<link rel="stylesheet" href="css/awards.css">
+	<link rel="stylesheet" href="css/layerPop.css">
 </head>
 <body>
 	<div class="page-wrap">
@@ -56,6 +57,28 @@
 
 	</div>	
 	
-	
+	<div id="mask"></div>
+    <div class="userInfo window">
+    	<header>
+    		<img src="image/ProfilePhoto.jpg" alt="ProfilePhoto">
+    		<p class="user-name">ojlee</p>
+    		<button class="edit">수정</button>
+    		<!-- <button class="edit confirm">수정완료</button> -->
+    		<button class="close"></button>
+    	</header>
+    	<main>
+    		<div class="prize">
+    			<img src="image/trophy.png" alt="trophy.png" class="title">
+    			<p class="content"> 999 회</p>
+    		</div>
+    		<div class="introduce">
+    			<span class="title">소개: </span>
+    			<p class="content">1000번 1등 가즈아</p>
+    			<!-- <textarea name="introduce" id="introduce" class="content" cols="40" rows="12"></textarea> -->
+    		</div>
+    	</main>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/layerPop.js" charset="utf-8"></script>
 </body>
 </html>

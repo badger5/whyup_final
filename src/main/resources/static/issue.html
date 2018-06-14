@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="css/main-header.css">
 	<link rel="stylesheet" href="css/issue.css">
 	<link rel="stylesheet" href="css/comment.css">
+	<link rel="stylesheet" href="css/layerPop.css">
+
 </head>
 <body>
 	<div class="page-wrap">
@@ -42,7 +44,7 @@
 				<div class="comment high-recommeded">
 					<header class="comment-header">
 						<img src="image/ProfilePhoto.jpg" alt="profile">
-						<p class="name">ojlee(<span class="prize">32</span>)</p>
+						<p class="user-name">ojlee(<span class="prize">32</span>)</p>
 					</header>
 					<main class="comment-body">
 						<div class="content">안녕하세요~~~~</div>
@@ -66,6 +68,38 @@
 
 	</div>	
 	
-	
+	<div id="mask"></div>
+    <div class="userInfo window">
+    	<header>
+    		<img src="image/ProfilePhoto.jpg" alt="ProfilePhoto">
+    		<p class="user-name">ojlee</p>
+    		<button class="edit">수정</button>
+    		<!-- <button class="edit confirm">수정완료</button> -->
+    		<button class="close"></button>
+    	</header>
+    	<main>
+    		<div class="prize">
+    			<img src="image/trophy.png" alt="trophy.png" class="title">
+    			<p class="content"> 999 회</p>
+    		</div>
+    		<div class="introduce">
+    			<span class="title">소개: </span>
+    			<p class="content">1000번 1등 가즈아</p>
+    			<!-- <textarea name="introduce" id="introduce" class="content" cols="40" rows="12"></textarea> -->
+    		</div>
+    	</main>
+    </div>
+
+    <div class="write-board window">
+		<h1>글쓰기</h1>
+		<div class="write-issue">이슈이름</div>
+		<textarea class="comment" cols="75" rows="15" placeholder="내용을 입력해 주세요"></textarea>
+		<button class="complete">작성 완료</button>
+		<button class="close"></button>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/layerPop.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/issue.js" charset="utf-8"></script>
+
 </body>
 </html>

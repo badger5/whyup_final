@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+}
+
+h1 {
+	margin-bottom: 55px;
+	font-size: 32px;
+}
+
+.login-wrap {
+	width: 430px;
+	margin:0 auto;
+	padding: 20px;
+}
+
+.login-wrap > section {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 20px;
+}
+
+input[type="text"] {
+	font-size: 14px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	width: 80%;
+	
+}
+
+.id-area, .pw-area {
+	width: 90%;
+}
+
+section > div.title {
+	flex-basis: 30%;
+	padding-left: 40px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.btn-area {
+	justify-content: flex-end;
+	margin-top: 40px;
+}
+
+.btn-area button{
+	width: 98px;
+	height: 39px;
+	border-radius:4px;
+	border: none;
+	color: white;
+	font-size:18px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-area > button.login {
+	background-color: rgb(52, 152, 219);
+	margin-left: 20px;
+}
+
+.btn-area p {
+	color: rgb(52, 152, 219)
+}
