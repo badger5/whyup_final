@@ -1,0 +1,21 @@
+
+
+.main-article > .issue {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	background-color: #E0E0E0;
+	font-size: 36px;
+	font-weight: bold;
+	margin: 70px 0;
+	padding: 10px 0;
+	cursor: pointer;
+}
+
+
+.issue > .rank {
+	float:left;
+	position: absolute;
+	left:5%;
+}
+

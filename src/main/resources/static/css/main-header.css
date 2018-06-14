@@ -1,0 +1,100 @@
+
+.main-header {
+	display: flex;
+	align-items: baseline;
+	margin: 50px 0;
+
+}
+
+.title-nav {
+	display: flex;
+	align-items: baseline;
+	flex-grow: 1;
+}
+
+.title-nav > a {
+	margin: 0 3%;
+}
+
+.title-nav .title {
+	color: #bbbbbb;
+	font-size: 24px;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.title-nav h1.selected {
+	color: black;
+	font-size: 32px;
+	font-weight: bold;
+} 
+
+.title-nav .title:hover {
+	color: black;
+	box-shadow: 0px 3px black;
+	font-size: 32px;
+}
+
+.title-nav .t2::before{
+	content: "";
+	background-image: url('/image/trophy.png');
+	background-repeat: no-repeat;
+    background-size: 32px 32px;
+    display: inline-block;
+    width: 32px; 
+    height: 32px;
+    margin-right: 10px;
+}
+
+.user-area {
+	display: flex;
+	flex-basis: 30%;
+	justify-content: center;
+	align-items: baseline;
+	margin:0 3%;
+}
+.user-area p {
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.user-area > .user {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	cursor: pointer;
+	margin-right: 12%
+}
+.user-area .prize {
+	color: rgb(211, 84, 0);
+}
+
+.user > .user-img {
+	background-image: url('/image/ProfilePhoto.jpg');
+	background-repeat: no-repeat;
+    background-size: 50px 50px;
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+    align-self: center;
+    cursor: pointer;
+}
+.logout {
+	background-color: white;
+	border: none;
+	background-image: url('/image/exit.png');
+	background-repeat: no-repeat;
+	background-size: 40px 40px;
+	width: 65px;
+	height: 40px;
+	align-self: center;
+	cursor: pointer;
+}
+
+
+
+
