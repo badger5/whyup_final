@@ -1,0 +1,25 @@
+.comment-area {
+	width: 75%;
+}
+
+.comment-body .tag {
+	color: rgb(41, 128, 185);
+	font-size: 18px;
+	margin-top: 10px; 
+}
+
+.comment-body .tag::after {
+	content: "";
+	background-image:url('/image/trophy.png');
+	background-repeat: no-repeat;
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    margin-left: 10px;
+}
+
+.comment-body > .content{
+	padding:15px 20px 25px 20px;
+	width: 80%;
+}

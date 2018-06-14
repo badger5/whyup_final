@@ -1,0 +1,150 @@
+/*comment*/
+
+
+.comment-area {
+	padding: 30px 50px;
+	height: 700px;
+	overflow-y:auto;
+}
+
+div.comment {
+	border: 2px solid #E0E0E0;
+	border-radius: 12px;
+	width: 100%;
+	min-height: 140px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+div.high-recommeded{
+	border-color: #F80000
+}
+
+div.middle-recommeded{
+	border-color: #EA9C12
+}
+
+div.low-recommeded{
+	border-color: gray
+}
+
+.comment-area::-webkit-scrollbar-track
+{
+	background-color: white;
+}
+
+.comment-area::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+.comment-area::-webkit-scrollbar-thumb
+{
+	background-color: #E0E0E0;
+	border-radius: 50px;
+}
+
+.comment {
+	padding: 10px 0;
+	display: flex;
+}
+
+.comment-header {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 20%;
+	cursor: pointer;
+} 
+
+.comment-header > * {
+	font-size: 16px;
+	display: inline;
+	margin:0 auto;
+}
+
+.comment-header > img{
+	width:50px;
+	height:50px;
+	border-radius: 50px;
+	margin:20px auto 10px auto;
+	
+}
+
+.comment-body {
+	flex-basis: 85%;
+	position: relative;
+}
+
+.comment-body > .content{
+	padding:25px 20px;
+	width: 80%;
+}
+
+.comment-body > .time {
+	font-size: 14px;
+	color: gray;
+	position: absolute;
+	left:25px;
+	bottom: 20px;
+}
+
+.comment-body > .delete {
+	position: absolute;
+	padding: 2px 8px;
+	border: none;
+	border-radius: 4px; 
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: rgb(230, 126, 34);
+	right: 20px;
+	top:10px;
+	cursor: pointer;
+}
+
+.thumbs-up {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: white;
+	position: absolute;
+	right: 30px;
+	bottom: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.thumbs-up::before {
+	content: "";
+	background-repeat: no-repeat;
+    background-size: 32px 32px;
+    display: inline-block;
+    width: 32px; 
+    height: 32px;
+    margin-right: 10px;
+
+}
+
+.high-recommeded .thumbs-up {
+	color:#F80000;
+}
+
+.high-recommeded .thumbs-up::before {
+	background-image:url('/image/like_red.png');
+}
+
+.middle-recommeded .thumbs-up {
+	color:#EA9C12;
+}
+
+.middle-recommeded .thumbs-up::before {
+	background-image:url('/image/like_yellow.png');
+}
+
+.low-recommeded .thumbs-up {
+	color:gray;
+}
+
+.low-recommeded .thumbs-up::before {
+	background-image:url('/image/like_gray.png');
+}
