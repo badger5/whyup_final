@@ -1,6 +1,8 @@
-package kr.ac.jejunu.whyup;
+package kr.ac.jejunu.whyup.Controller;
 
 
+import kr.ac.jejunu.whyup.Repository.UserRepository;
+import kr.ac.jejunu.whyup.Model.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class UserController {
 
-    private UserRepository userRepository;
+    UserRepository userRepository;
 
     @GetMapping("/{id}")
     public User get(@PathVariable Integer id) {

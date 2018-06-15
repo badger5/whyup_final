@@ -1,4 +1,4 @@
-package kr.ac.jejunu.whyup;
+package kr.ac.jejunu.whyup.Model;
 
 
 import lombok.Data;

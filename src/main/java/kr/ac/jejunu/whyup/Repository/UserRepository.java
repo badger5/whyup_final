@@ -1,6 +1,7 @@
-package kr.ac.jejunu.whyup;
+package kr.ac.jejunu.whyup.Repository;
 
 
+import kr.ac.jejunu.whyup.Model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
