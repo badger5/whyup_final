@@ -14,13 +14,13 @@
 		<header class="main-header">
 			<nav class="title-nav">
 				<a href="index.html"><h1 class="title t1 selected">이슈순위</h1></a>
-				<a href="highlight.html"><h1 class="title t2">명예의전당</h1></a>
+				<a href="awards.html"><h1 class="title t2">명예의전당</h1></a>
 			</nav>
 			<div class="user-area">
-				<!-- <p class="login">Login</p> -->
+				<p class="login">Login</p>
 				<div class="user">
-					<label class="user-img" for="user"></label>
-					<p class="user-name">ojlee(<span class="prize">32</span>)</p>
+					<!-- <label class="user-img" for="user"></label>
+					<p class="user-name">ojlee(<span class="prize">32</span>)</p> -->
 				</div>
 				<button class="logout"></button>
 				
@@ -57,7 +57,7 @@
     	<header>
     		<img src="image/ProfilePhoto.jpg" alt="ProfilePhoto">
     		<p class="user-name">ojlee</p>
-    		<button class="edit">수정</button>
+    		<!--<button class="edit">수정</button>-->
     		<!-- <button class="edit confirm">수정완료</button> -->
     		<button class="close"></button>
     	</header>
@@ -74,6 +74,13 @@
     	</main>
     </div>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/new-window.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/layerPop.js" charset="utf-8"></script>
+    <script>
+    	$(".issue").click(function(){
+    		window.location.href = "issue.html"
+    	})
+    </script>
+
 </body>
 </html>

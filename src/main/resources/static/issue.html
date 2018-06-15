@@ -16,7 +16,7 @@
 		<header class="main-header">
 			<nav class="title-nav">
 				<a href="index.html"><h1 class="title t1 selected">이슈순위</h1></a>
-				<a href="highlight.html"><h1 class="title t2">명예의전당</h1></a>
+				<a href="awards.html"><h1 class="title t2">명예의전당</h1></a>
 			</nav>
 			<div class="user-area">
 				<!-- <p class="login">Login</p> -->
@@ -53,8 +53,30 @@
 						<button class="thumbs-up">66</button>
 					</main>
 				</div>
-				<div class="comment middle-recommeded"></div>
-				<div class="comment low-recommeded"></div>
+				<div class="comment middle-recommeded">
+					<header class="comment-header">
+						<img src="image/ProfilePhoto.jpg" alt="profile">
+						<p class="user-name">ojlee(<span class="prize">32</span>)</p>
+					</header>
+					<main class="comment-body">
+						<div class="content">안녕하세요~~~~</div>
+						<p class="time">20분전</p>
+						<button class="delete hidd">삭제</button>
+						<button class="thumbs-up">66</button>
+					</main>					
+				</div>
+				<div class="comment low-recommeded">
+					<header class="comment-header">
+						<img src="image/ProfilePhoto.jpg" alt="profile">
+						<p class="user-name">ojlee(<span class="prize">32</span>)</p>
+					</header>
+					<main class="comment-body">
+						<div class="content">안녕하세요~~~~</div>
+						<p class="time">20분전</p>
+						<button class="delete hidd">삭제</button>
+						<button class="thumbs-up">66</button>
+					</main>					
+				</div>
 				<div class="comment low-recommeded"></div>
 				<div class="comment low-recommeded"></div>
 				<div class="comment low-recommeded"></div>
@@ -73,7 +95,7 @@
     	<header>
     		<img src="image/ProfilePhoto.jpg" alt="ProfilePhoto">
     		<p class="user-name">ojlee</p>
-    		<button class="edit">수정</button>
+    		<!--<button class="edit">수정</button>-->
     		<!-- <button class="edit confirm">수정완료</button> -->
     		<button class="close"></button>
     	</header>
@@ -98,8 +120,15 @@
 		<button class="close"></button>
     </div>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/new-window.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/layerPop.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/issue.js" charset="utf-8"></script>
+    <script>
+    	$(".comment-area .comment-header").click(function(e){
+        e.preventDefault();
+        wrapWindowByMask($(".userInfo"));
+    });
+    </script>
 
 </body>
 </html>
